@@ -1,3 +1,327 @@
+// ================================
+// PP Furniture & Design
+// COMPLETE PREMIUM WEBSITE
+// React + Vite
+// ================================
+
+import './App.css'
+
+function App() {
+
+  return (
+
+    <div>
+
+      {/* ================= NAVBAR ================= */}
+
+      <nav className="navbar">
+
+        <div className="logo">
+          PP Furniture
+        </div>
+
+        <ul className="nav-links">
+          <li>Home</li>
+          <li>Portfolio</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Reviews</li>
+          <li>Contact</li>
+        </ul>
+
+      </nav>
+
+      {/* ================= HERO ================= */}
+
+      <section className="hero">
+
+        <div className="overlay"></div>
+
+        <div className="hero-content">
+
+          <h1>
+            Luxury Interior Design
+          </h1>
+
+          <p>
+            Premium Built-in Furniture & Modern Interior
+          </p>
+
+          <div className="hero-buttons">
+
+            <button className="gold-btn">
+              View Portfolio
+            </button>
+
+            <button className="dark-btn">
+              Contact Us
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= SERVICES ================= */}
+
+      <section className="services">
+
+        <h2>
+          Our Services
+        </h2>
+
+        <div className="services-grid">
+
+          <div className="service-card">
+            <h3>Built-in Furniture</h3>
+            <p>
+              Premium custom built-in furniture for luxury homes.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <h3>Interior Design</h3>
+            <p>
+              Modern luxury interior design for condo and house.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <h3>Pet Furniture</h3>
+            <p>
+              Luxury cat condo and pet furniture design.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= PORTFOLIO ================= */}
+
+      <section className="portfolio">
+
+        <h2>
+          Our Portfolio
+        </h2>
+
+        <div className="portfolio-grid">
+
+          <div className="portfolio-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600"
+              alt=""
+            />
+
+            <div className="portfolio-content">
+              <h3>Luxury Bedroom</h3>
+            </div>
+
+          </div>
+
+          <div className="portfolio-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600"
+              alt=""
+            />
+
+            <div className="portfolio-content">
+              <h3>Modern Living Room</h3>
+            </div>
+
+          </div>
+
+          <div className="portfolio-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600"
+              alt=""
+            />
+
+            <div className="portfolio-content">
+              <h3>Premium Kitchen</h3>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= ABOUT ================= */}
+
+      <section className="about">
+
+        <div className="about-left">
+
+          <img
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600"
+            alt=""
+          />
+
+        </div>
+
+        <div className="about-right">
+
+          <h2>
+            About PP Furniture
+          </h2>
+
+          <p>
+            We specialize in luxury interior design,
+            built-in furniture, and premium custom furniture.
+            Our team creates elegant and modern living spaces.
+          </p>
+
+          <button className="gold-btn">
+            Learn More
+          </button>
+
+        </div>
+
+      </section>
+
+      {/* ================= REVIEWS ================= */}
+
+      <section className="reviews">
+
+        <h2>
+          Customer Reviews
+        </h2>
+
+        <div className="review-grid">
+
+          <div className="review-card">
+
+            <p>
+              “Amazing quality and premium design.”
+            </p>
+
+            <h4>
+              - Thanet
+            </h4>
+
+          </div>
+
+          <div className="review-card">
+
+            <p>
+              “Luxury interior and professional team.”
+            </p>
+
+            <h4>
+              - Customer
+            </h4>
+
+          </div>
+
+          <div className="review-card">
+
+            <p>
+              “Very beautiful built-in furniture.”
+            </p>
+
+            <h4>
+              - Home Owner
+            </h4>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= CONTACT ================= */}
+
+      <section className="contact">
+
+        <h2>
+          Contact Us
+        </h2>
+
+        <div className="contact-box">
+
+          <input
+            type="text"
+            placeholder="Your Name"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+          />
+
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+
+          <button className="gold-btn">
+            Send Message
+          </button>
+
+        </div>
+
+      </section>
+
+      {/* ================= FOOTER ================= */}
+
+      <footer className="footer">
+
+        <div className="footer-grid">
+
+          <div>
+
+            <h3>PP Furniture</h3>
+
+            <p>
+              Luxury Interior Design & Built-in Furniture
+            </p>
+
+          </div>
+
+          <div>
+
+            <h3>Menu</h3>
+
+            <p>Home</p>
+            <p>Portfolio</p>
+            <p>Services</p>
+
+          </div>
+
+          <div>
+
+            <h3>Contact</h3>
+
+            <p>Phone : 081-234-5678</p>
+
+            <p>LINE : @ppfurniture</p>
+
+          </div>
+
+        </div>
+
+        <div className="copyright">
+          © 2026 PP Furniture & Design
+        </div>
+
+      </footer>
+
+    </div>
+
+  )
+
+}
+
+export default App
+/* ========================= */
+/* COMPLETE PREMIUM CSS */
+/* ========================= */
+
 *{
   margin:0;
   padding:0;
@@ -5,34 +329,32 @@
 }
 
 html,body{
-  width:100%;
   overflow-x:hidden;
-  font-family:'Arial',sans-serif;
+  font-family:Arial;
   background:#0f0f0f;
   color:white;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 .navbar{
   position:fixed;
   top:0;
   left:0;
   width:100%;
+  padding:25px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:25px 80px;
-  z-index:1000;
-  background:rgba(0,0,0,0.4);
+  background:rgba(0,0,0,0.5);
   backdrop-filter:blur(10px);
+  z-index:999;
 }
 
 .logo{
-  font-size:36px;
-  font-weight:700;
+  font-size:34px;
+  font-weight:bold;
   color:#d4af37;
-  letter-spacing:2px;
 }
 
 .nav-links{
@@ -43,7 +365,6 @@ html,body{
 
 .nav-links li{
   cursor:pointer;
-  font-size:18px;
   transition:0.3s;
 }
 
@@ -51,35 +372,34 @@ html,body{
   color:#d4af37;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
-  width:100%;
   height:100vh;
-  background-image:
-  linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
-  url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600');
-
+  background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600');
   background-size:cover;
   background-position:center;
-  background-repeat:no-repeat;
-
+  position:relative;
   display:flex;
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:20px;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
 }
 
 .hero-content{
-  max-width:1000px;
+  position:relative;
+  z-index:2;
 }
 
 .hero h1{
   font-size:90px;
-  line-height:1.1;
   margin-bottom:20px;
-  font-weight:700;
 }
 
 .hero p{
@@ -88,28 +408,67 @@ html,body{
   margin-bottom:40px;
 }
 
-.hero button{
-  padding:18px 50px;
-  border:none;
-  border-radius:12px;
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.gold-btn{
+  padding:18px 45px;
   background:#d4af37;
   color:black;
-  font-size:20px;
-  font-weight:bold;
+  border:none;
+  border-radius:12px;
   cursor:pointer;
-  transition:0.3s;
+  font-size:18px;
+  font-weight:bold;
 }
 
-.hero button:hover{
-  transform:translateY(-5px);
-  background:white;
+.dark-btn{
+  padding:18px 45px;
+  background:transparent;
+  border:2px solid white;
+  color:white;
+  border-radius:12px;
+  cursor:pointer;
+  font-size:18px;
 }
 
-/* PORTFOLIO */
+/* ================= SERVICES ================= */
+
+.services{
+  padding:120px 8%;
+}
+
+.services h2{
+  text-align:center;
+  font-size:60px;
+  margin-bottom:70px;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.service-card{
+  background:#1b1b1b;
+  padding:50px;
+  border-radius:24px;
+}
+
+.service-card h3{
+  margin-bottom:20px;
+  font-size:32px;
+}
+
+/* ================= PORTFOLIO ================= */
 
 .portfolio{
-  padding:120px 80px;
-  background:#111;
+  padding:120px 8%;
+  background:#151515;
 }
 
 .portfolio h2{
@@ -124,81 +483,153 @@ html,body{
   gap:40px;
 }
 
-.card{
-  background:#1a1a1a;
+.portfolio-card{
+  background:#1b1b1b;
   border-radius:24px;
   overflow:hidden;
-  transition:0.4s;
 }
 
-.card:hover{
-  transform:translateY(-10px);
-}
-
-.card img{
+.portfolio-card img{
   width:100%;
-  height:350px;
+  height:400px;
   object-fit:cover;
 }
 
-.card h3{
+.portfolio-content{
   padding:25px;
-  font-size:28px;
 }
 
-/* CONTACT */
-
-.contact{
-  padding:120px 20px;
-  text-align:center;
-  background:#181818;
+.portfolio-content h3{
+  font-size:30px;
 }
 
-.contact h2{
+/* ================= ABOUT ================= */
+
+.about{
+  padding:120px 8%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  border-radius:30px;
+}
+
+.about h2{
   font-size:60px;
   margin-bottom:30px;
 }
 
-.contact p{
-  font-size:24px;
-  margin-bottom:15px;
+.about p{
+  font-size:22px;
+  line-height:1.8;
+  margin-bottom:40px;
   color:#ccc;
 }
 
-.contact button{
-  margin-top:40px;
-  padding:18px 50px;
-  border:none;
-  border-radius:12px;
-  background:#d4af37;
-  color:black;
-  font-size:20px;
-  font-weight:bold;
-  cursor:pointer;
+/* ================= REVIEWS ================= */
+
+.reviews{
+  padding:120px 8%;
+  background:#151515;
 }
 
-/* FOOTER */
-
-.footer{
-  padding:40px;
+.reviews h2{
   text-align:center;
-  background:black;
-  color:#777;
+  font-size:60px;
+  margin-bottom:70px;
+}
+
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.review-card{
+  background:#1f1f1f;
+  padding:50px;
+  border-radius:24px;
+}
+
+.review-card p{
+  font-size:22px;
+  margin-bottom:30px;
+  color:#ddd;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+  padding:120px 8%;
+  text-align:center;
+}
+
+.contact h2{
+  font-size:60px;
+  margin-bottom:60px;
+}
+
+.contact-box{
+  max-width:700px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-box input,
+.contact-box textarea{
+  padding:20px;
+  border:none;
+  border-radius:12px;
+  background:#1f1f1f;
+  color:white;
   font-size:18px;
 }
 
-/* MOBILE */
+/* ================= FOOTER ================= */
+
+.footer{
+  background:black;
+  padding:80px 8% 30px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+  margin-bottom:40px;
+}
+
+.footer h3{
+  margin-bottom:20px;
+  color:#d4af37;
+}
+
+.footer p{
+  margin-bottom:12px;
+  color:#aaa;
+}
+
+.copyright{
+  text-align:center;
+  color:#666;
+  border-top:1px solid #222;
+  padding-top:20px;
+}
+
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
   .navbar{
-    padding:20px;
     flex-direction:column;
     gap:20px;
-  }
-
-  .logo{
-    font-size:28px;
+    padding:20px;
   }
 
   .nav-links{
@@ -208,23 +639,27 @@ html,body{
   }
 
   .hero h1{
-    font-size:48px;
+    font-size:50px;
   }
 
   .hero p{
     font-size:20px;
   }
 
-  .portfolio{
-    padding:80px 20px;
+  .hero-buttons{
+    flex-direction:column;
   }
 
-  .portfolio h2{
-    font-size:42px;
-  }
-
+  .services h2,
+  .portfolio h2,
+  .about h2,
+  .reviews h2,
   .contact h2{
     font-size:42px;
+  }
+
+  .about{
+    grid-template-columns:1fr;
   }
 
 }
