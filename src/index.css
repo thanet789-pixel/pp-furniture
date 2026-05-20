@@ -1,8 +1,268 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body{
+/* ========================= */
+/* GLOBAL STYLE */
+/* ========================= */
+
+*{
   margin:0;
   padding:0;
-  font-family: Arial, Helvetica, sans-serif;
-  background:#f8f5f0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+html,
+body,
+#root{
+  width:100%;
+  overflow-x:hidden;
+  background:#07120f;
+  color:white;
+  font-family:'Inter',sans-serif;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+  min-height:100vh;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* ========================= */
+/* TEXT SELECTION */
+/* ========================= */
+
+::selection{
+  background:#d6b37a;
+  color:black;
+}
+
+/* ========================= */
+/* SCROLLBAR */
+/* ========================= */
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#07120f;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#d6b37a;
+  border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#e5c48e;
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+button{
+  cursor:pointer;
+  transition:all 0.3s ease;
+  border:none;
+  outline:none;
+}
+
+/* ========================= */
+/* INPUT */
+/* ========================= */
+
+input,
+textarea,
+select{
+  font-family:inherit;
+  color:white;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  outline:none;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.container-custom{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  padding-left:24px;
+  padding-right:24px;
+}
+
+/* ========================= */
+/* GOLD TEXT */
+/* ========================= */
+
+.gold-text{
+  color:#d6b37a;
+}
+
+/* ========================= */
+/* PREMIUM BUTTON */
+/* ========================= */
+
+.gold-btn{
+  background:#d6b37a;
+  color:black;
+  padding:16px 34px;
+  border-radius:999px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.gold-btn:hover{
+  transform:translateY(-3px);
+  background:#e6c893;
+}
+
+/* ========================= */
+/* GLASS EFFECT */
+/* ========================= */
+
+.glass{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+section{
+  position:relative;
+}
+
+/* ========================= */
+/* NAVBAR SPACING */
+/* ========================= */
+
+.nav-spacing{
+  padding-top:100px;
+}
+
+/* ========================= */
+/* PREMIUM SHADOW */
+/* ========================= */
+
+.shadow-premium{
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* ========================= */
+/* CARD HOVER */
+/* ========================= */
+
+.card-hover{
+  transition:0.4s;
+}
+
+.card-hover:hover{
+  transform:translateY(-8px);
+}
+
+/* ========================= */
+/* HERO OVERLAY */
+/* ========================= */
+
+.hero-overlay{
+  background:
+  linear-gradient(
+    to right,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.45)
+  );
+}
+
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
+.fade-up{
+  animation:fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:1024px){
+
+  .container-custom{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  body{
+    font-size:15px;
+  }
+
+  .container-custom{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+}
+
+@media(max-width:480px){
+
+  body{
+    font-size:14px;
+  }
+
 }
